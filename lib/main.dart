@@ -33,17 +33,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             "Oops!\nEm construção...🔨",
             style: Theme.of(context).textTheme.titleLarge,
           ),
-          Lottie.asset(Assets.assets_images_building_page_json),
+          Lottie.asset(
+            Assets.assets_images_building_page_json,
+            fit: BoxFit.contain,
+          ),
         ],
-      )),
+      ),
     );
   }
 }
