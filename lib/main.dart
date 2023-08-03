@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style: Theme.of(context).textTheme.titleLarge,
           ),
           Lottie.asset(
-            Assets.assets_images_building_page_json,
+            Assets.assets_images_building_app_json,
             fit: BoxFit.contain,
           ),
         ],
